@@ -20,6 +20,8 @@ int menu(char * file_call, char * file_crew) {
     cout << "7 - задать время" << endl;
     cout << "другая цифра - завершить работу" << endl;
 
+    cin >> choice;
+
     switch (choice) {
 
     case 1: print_crew(file_call, file_crew);
