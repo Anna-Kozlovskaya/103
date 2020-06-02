@@ -9,7 +9,7 @@ int menu(char * file_call, char * file_crew) {
     //засорять нехорошо.
 
     int choice;
-
+    system("clear");//Просто для более красивого меню(что-бы всё не было одно под другим)
     cout << "Выберите действие:" << endl;
     cout << "1 - вывести базу экипажей" << endl;
     cout << "2 - редактировать базу экипажей" << endl;
@@ -24,19 +24,33 @@ int menu(char * file_call, char * file_crew) {
 
     switch (choice) {
 
-    case 1: print_crew(file_call, file_crew);
+    case 1: 
+        system("clear");   
+        print_crew(file_call, file_crew);
         break;
-    case 2: edit_crew(file_call,file_crew);
+    case 2: 
+        system("clear");
+        edit_crew(file_call,file_crew);
         break;
-    case 3: set_crew(file_call, file_crew);
+    case 3: 
+        system("clear");
+        set_crew(file_call, file_crew);
         break;
-    case 4: print_duty_crew(file_call, file_crew);
+    case 4: 
+            system("clear");
+            print_duty_crew(file_call, file_crew);
         break;
-    case 5: add_call(file_call,file_crew);
+    case 5: 
+        system("clear");
+        add_call(file_call,file_crew);
         break;
-    case 6: print_call(file_call,file_crew);
+    case 6: 
+        system("clear");
+        print_call(file_call,file_crew);
         break;
-    case 7: set_time(file_call, file_crew);
+    case 7: 
+        system("clear");
+        set_time(file_call, file_crew);
         break;
     default: return 0;
         break;
