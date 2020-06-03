@@ -8,7 +8,7 @@
 /*функция вывода базы экипажей,т.е/ФИО врача/ /ФИО фельдшера/ /ФИО водителя/....*/
 
 int print_crew(char * file_call, char * file_crew) {
-    ifstream fin;
+	ifstream fin;
 	fin.open(file_crew);
 	if (!(fin.is_open()))
 	{
@@ -23,11 +23,12 @@ int print_crew(char * file_call, char * file_crew) {
 	fin.close();
 	fin.open(file_crew);
 	crew *crew_1 = new crew[line_count];
+	int a,b,c;			//считываем оставшиеся числа в файле,чтобы выводились только фамилии							
 	for (int i = 0; i < line_count; i++) 
-    {
-        fin >> crew_1[i];
-        cout << crew_1[i];
-    }
+    	{
+        	fin >> crew_1[i] >> a >> b;
+        	cout << crew_1[i];
+    	}
 	fin.close();
 	delete [] crew_1;
 
