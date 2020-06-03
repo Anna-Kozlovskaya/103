@@ -5,7 +5,7 @@
 #include "crew.h"
 #include "call.h"
 
-/*функция вывода базы экипажей,т.е/ФИО врача/ /ФИО фельдшера/ /ФИО водителя/....*/
+/*функция вывода базы экипажей,т.е/ФИО врача/ /ФИО фельдшера/ /ФИО водителя/*/
 
 int print_crew(char * file_call, char * file_crew) {
 	ifstream fin;
@@ -26,8 +26,8 @@ int print_crew(char * file_call, char * file_crew) {
 	int a,b,c;			//считываем оставшиеся числа в файле,чтобы выводились только фамилии							
 	for (int i = 0; i < line_count; i++) 
     	{
-        	fin >> crew_1[i] >> a >> b;
-        	cout << crew_1[i];
+        	fin >> crew_1[i].doctor >> crew_1[i].paramedic >> crew_1[i].driver >> a >> b >> c;
+        	cout << crew_1[i].doctor << " " << crew_1[i].paramedic << " " << crew_1[i].driver << endl;
     	}
 	fin.close();
 	delete [] crew_1;
