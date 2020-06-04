@@ -13,6 +13,7 @@ private:
     string driver; //фамилия водителя
     int duty_status; //статус дежурства: число часов на дежурстве (если  0 - то НЕ на дежурстве)
     int call_status; //статус вызова: когда освободится с текущего вызова
+    bool duty_bool;//	
 
     friend ostream& operator<< (ostream& os, const crew& crew);
     friend istream& operator>> (istream& is, crew& crew);

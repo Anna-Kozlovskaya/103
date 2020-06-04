@@ -23,15 +23,15 @@ int print_crew(char * file_call, char * file_crew) {
 	fin.close();
 	fin.open(file_crew);
 	crew *crew_1 = new crew[line_count];
-	int a,b,c;			//считываем оставшиеся числа в файле,чтобы выводились только фамилии							
+			//считываем оставшиеся числа в файле,чтобы выводились только фамилии							
 	for (int i = 0; i < line_count; i++) 
     	{
-        	fin >> crew_1[i].doctor >> crew_1[i].paramedic >> crew_1[i].driver >> a >> b >> c;
+        	fin >> crew_1[i];
         	cout << crew_1[i].doctor << " " << crew_1[i].paramedic << " " << crew_1[i].driver << endl;
     	}
 	fin.close();
 	delete [] crew_1;
 
-    ask(file_call, file_crew);
+    
     return 0;
 }

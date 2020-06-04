@@ -1,6 +1,9 @@
+#include <iostream>
+#include <fstream>
 #include "all.h"
 #include "crew.h"
 #include "call.h"
+using namespace std;
 
 
 /*Надо эти функции еще в заголовочный добавить и в меню на втором пункте, чтобы работало,и еще булевую переменную в классе*/
@@ -8,45 +11,17 @@
 	int add_crew(char * file_call, char * file_crew){
 		ifstream fin;
 		fin.open(file_crew);
-		if (!(fin.is_open()))
-		{
-			cout << "Ошибка! Не удалось открыть файл!!"<< endl;
-		}
-	
-		int line_count=0;
-		string str;
-
-		while (getline(fin,str))	//подсчет количества строк в файле сrew 
-		{
-			line_count++;
-		}
-
-		fin.close();
-		fin.open(file_crew);
-
-		crew *crew_1 = new crew[line_count];
-		crew crew_2;
-		int a,b,c;
-		for (int i = 0; i < line_count; i++) 
-		{
-        	fin >> crew_1[i];
-    	}
-		fin.close();
-
-		//тут просто идет перезапись в файл с добавленным экипажем
-
-		ofstream fout(file_crew,ios_base::trunc);
-		cout << "Добавьте экипаж и информацию о нем: "<< endl;
-		cin >> crew_2.doctor >> crew_2.paramedic >> crew_2.driver;
-		for (int i = 0; i < line_count; i++) {
-        		fout << crew_1[i];
-    	}
-		int status = 0;
-		fout << crew_2.doctor << " " << crew_2.paramedic << " " << crew_2.driver << " " << status << " " << status << " " << status;
-    	
-		fout.close();
-		delete [] crew_1;
-		ask(file_call, file_crew);
+		crew crew_add;
+        fstream add;
+    	add.open(file_crew, ios::app);
+        cout<<"Введите данные об экипаже :"<<endl;
+    	cin>> crew_add.doctor>>crew_add.paramedic>>crew_add.driver;
+        crew_add.duty_status=0;
+        crew_add.call_status=0;
+        crew_add.duty_bool=false;
+        
+        add<<crew_add;
+		add.close();
     		return 0;
 	}
 
@@ -105,6 +80,6 @@
    	 	}
 		fout.close();
 		delete [] crew_1;
-		ask(file_call, file_crew);
+		
     		return 0;	
 	}
