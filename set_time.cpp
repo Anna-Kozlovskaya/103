@@ -4,6 +4,6 @@
 
 int set_time(char * file_call, char * file_crew) {
 
-    ask(file_call, file_crew);
+    
     return 0;
 }

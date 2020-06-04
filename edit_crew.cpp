@@ -8,6 +8,7 @@ using namespace std;
 
 /*Надо эти функции еще в заголовочный добавить и в меню на втором пункте, чтобы работало,и еще булевую переменную в классе*/
 /*Функция добавления экипажа*/
+
 	int add_crew(char * file_call, char * file_crew){
 		ifstream fin;
 		fin.open(file_crew);
@@ -26,6 +27,7 @@ using namespace std;
 	}
 
 	/*Функция удаления экипажа*/
+    
 
 	int deletes_crew(char * file_call, char * file_crew){
 		ifstream fin;

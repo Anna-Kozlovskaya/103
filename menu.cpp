@@ -56,7 +56,7 @@ int menu(char * file_call, char * file_crew) {
         default: return 0;
             break;
         }
-    }(while choise>=1 && choise<=7)
+    }while (choice>=1 && choice<=7);
     return 0;
 }
 
