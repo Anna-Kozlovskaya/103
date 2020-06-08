@@ -24,6 +24,7 @@ private:
     friend int set_crew(char * file_call, char * file_crew);
     friend int add_call(char * file_call, char * file_crew);
     friend int set_time(char * file_call, char * file_crew);
+    friend int print_duty_crew(char * file_call, char * file_crew);
 
 };
 

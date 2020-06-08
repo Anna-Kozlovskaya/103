@@ -36,6 +36,3 @@ int print_duty_crew(char * file_call, char * file_crew) {
     
     return 0;
 }
-    
-    return 0;
-}

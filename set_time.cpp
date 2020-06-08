@@ -46,12 +46,14 @@ int set_time(char * file_call, char * file_crew) {
             if (crews[i].duty_status >= 24) {
                 cout << "У экипажа доктора "<< crews[i].doctor << " закончилась смена." << endl;
                 crews[i].duty_status = 0;
+                crews[i].call_status = 0;
                 crews[i].duty_bool = false;
             }
             //теперь нужно изменить статус соотвествующего вызова
             crews[i].call_status = crews[i].call_status - hour;
             if (crews[i].call_status <= 0) {
                 for (j = 0; j < Ncall; j++) {
+                    crews[i].call_status = 0;
                     fcall >> calls[j];
                     if (calls[j].assigned_crew == crews[i].doctor) {
                         calls[j].status = "Завершен";
@@ -72,14 +74,14 @@ int set_time(char * file_call, char * file_crew) {
     //записываем изменения
     fcall.open(file_call, ios::out);
     for ( i = 0; i < Ncall ; i++) {
-                        fcall << calls[i] << endl;
+        fcall << calls[i] << endl;
     }
     fcall.close();
     delete [] calls;
 
     fcrew.open(file_crew, ios::out);
     for (i = 0; i < Ncrew ; i++) {
-                        fcrew << crews[i] << endl;
+        fcrew << crews[i] << endl;
     }
     fcrew.close();
     delete [] crews;
