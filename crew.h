@@ -11,7 +11,7 @@ private:
     string doctor; //фамилия врача
     string paramedic; //фамилия фельдшера
     string driver; //фамилия водителя
-    int duty_status; //статус дежурства: число часов на дежурстве (если  0 - то НЕ на дежурстве)
+    int duty_status; //статус дежурства: число часов на дежурстве
     int call_status; //статус вызова: когда освободится с текущего вызова
     bool duty_bool;//	
 
@@ -23,6 +23,7 @@ private:
     friend int set_crew(char * file_call, char * file_crew);
     friend int add_call(char * file_call, char * file_crew);
     friend int set_time(char * file_call, char * file_crew);
+
 };
 
 #endif // CREW_H

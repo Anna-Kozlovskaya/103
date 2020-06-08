@@ -1,5 +1,6 @@
 #include <iostream>
 #include "all.h"
+#include <cstdlib>
 
 using namespace std;
 
@@ -31,7 +32,12 @@ int menu(char * file_call, char * file_crew) {
             break;
         case 2: 
             system("clear");
-            edit_crew(file_call,file_crew);
+            int choice2;
+
+            cout << "1 - добавить экипаж" << endl;
+            cout << "2 - удалить экипаж" << endl;
+
+
             break;
         case 3: 
             system("clear");
