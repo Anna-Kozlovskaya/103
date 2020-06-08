@@ -7,7 +7,8 @@
 int menu(char * file_call, char * file_crew); //меню
 int print_crew(char * file_call, char * file_crew); //вывести список экипажей
 int print_call(char * file_call, char * file_crew); //вывести историю вызовов
-int edit_crew(char * file_call, char * file_crew); //редактировать базу экипажей (включает 3 ф-и: удаление, добавление, редактирование)
+int add_crew(char * file_call, char * file_crew); //добавить экипаж
+int deletes_crew(char * file_call, char * file_crew); // удалить экипаж
 int set_crew(char * file_call, char * file_crew); //установить дежурные экипажи
 int print_duty_crew(char * file_call, char * file_crew); //вывести дежурные экипажи
 int add_call(char * file_call, char * file_crew); //принять вызов

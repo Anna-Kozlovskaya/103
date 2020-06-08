@@ -19,7 +19,8 @@ private:
     friend istream& operator>> (istream& is, crew& crew);
 
     friend int print_crew(char * file_call, char * file_crew);
-    friend int edit_crew(char * file_call, char * file_crew);
+    friend int add_crew(char * file_call, char * file_crew);
+    friend int deletes_crew(char * file_call, char * file_crew);
     friend int set_crew(char * file_call, char * file_crew);
     friend int add_call(char * file_call, char * file_crew);
     friend int set_time(char * file_call, char * file_crew);
