@@ -32,6 +32,9 @@ set_crew.o: set_crew.cpp
 set_time.o: set_time.cpp
 	g++ -c -o set_time.o set_time.cpp
 
+search.o: search.cpp
+	g++ -c -o search.o search.cpp
+
 menu.o: menu.cpp
 	g++ -c -o menu.o menu.cpp
 

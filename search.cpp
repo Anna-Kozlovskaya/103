@@ -1,3 +1,10 @@
+#include "all.h"
+#include "crew.h"
+#include <string>
+#include <iostream>
+
+using namespace std;
+
 void search(char * file_call, char * file_crew)
 
 {

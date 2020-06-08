@@ -13,4 +13,5 @@ int set_crew(char * file_call, char * file_crew); //установить деж�
 int print_duty_crew(char * file_call, char * file_crew); //вывести дежурные экипажи
 int add_call(char * file_call, char * file_crew); //принять вызов
 int set_time(char * file_call, char * file_crew); //добавить N часов
+void search(char * file_call, char * file_crew); //найти экипаж
 #endif // ALL_H
