@@ -34,7 +34,7 @@ int menu(char * file_call, char * file_crew) {
 				if(choice<0 || choice>0)
 					cout << "Введите нужную цифру соответствующую пункту!!!!!" << endl;
 		}
-		while(choice==2){  
+	while(choice==2){  
             system("clear");
 			cout << "Выберите действие:" << endl;
     		cout << "1 - добавить экипаж в базу экипажей" << endl;
@@ -72,7 +72,7 @@ int menu(char * file_call, char * file_crew) {
 				if(choice<0 || choice>0)
 					cout << "Введите нужную цифру соответствующую пункту!!!!!" << endl;
 		}
-		while(choice==4){ 
+	while(choice==4){ 
             system("clear");   
             print_duty_crew(file_call, file_crew);
 			cout << "0 - Вернуться в меню"<<endl;
@@ -112,9 +112,9 @@ int menu(char * file_call, char * file_crew) {
 				if(choice<0 || choice>0)
 					cout << "Введите нужную цифру соответствующую пункту!!!!!" << endl;
 		}
-		while(choice==9){
-			return 0;
-		}
+	while(choice==9){
+		return 0;
+	}
     }
 	
 }
