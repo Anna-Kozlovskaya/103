@@ -23,7 +23,7 @@ int menu(char * file_call, char * file_crew) {
         cout << "9 - завершить работу" << endl;
 
         cin >> choice;
-        if(choice<1 || choice>8)
+        if(choice<1 || choice>9)
 				cout << "Введите нужную цифру соответствующую пункту!!!!!" << endl;
 
     	while(choice==1){ 
