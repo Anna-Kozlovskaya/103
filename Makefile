@@ -1,4 +1,4 @@
-SRC = add_call.o call.o crew.o edit_crew.o menu.o print_call.o print_crew.o print_duty_crew.o set_crew.o set_time.o main.o
+SRC = add_call.o call.o crew.o edit_crew.o menu.o print_call.o print_crew.o print_duty_crew.o set_crew.o set_time.o main.o search.o
 
 all: app all.h crew.h call.h
 
