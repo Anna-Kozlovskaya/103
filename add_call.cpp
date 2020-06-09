@@ -28,7 +28,7 @@ int add_call(char * file_call, char * file_crew){
 	}
 	crews.close();
 	crew *crew_1 = new crew[N];
-	crews.open(file_crew);
+	crews.open(file_crew,ios::in);
 	int Ncrew;
 	int Ncrew_1=-1;
 	int Ncrew_2=-1;
