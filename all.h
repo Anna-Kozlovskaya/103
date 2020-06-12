@@ -70,7 +70,7 @@ int set_time(char * file_call, char * file_crew);
 	\brief Функция поиска экипажей
 	\param file_call Текстовый документ с данными о вызовах
 	\param file_crew Текстовый документ с данными о экипажах
-  \return 0 если функция выполнена
+ 	\return 0 если функция выполнена
 */
 int search(char * file_call, char * file_crew);
 #endif // ALL_H
