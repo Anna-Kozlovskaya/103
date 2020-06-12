@@ -1,0 +1,728 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.14"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Проект №1: Класс crew</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Проект №1
+   &#160;<span id="projectnumber">1.0</span>
+   </div>
+   <div id="projectbrief">Система для диспетчеров скорой помощи</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Создано системой Doxygen 1.8.14 -->
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',false,false,'search.php','Поиск');
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#pri-attribs">Закрытые данные</a> &#124;
+<a href="#friends">Друзья</a> &#124;
+<a href="classcrew-members.html">Полный список членов класса</a>  </div>
+  <div class="headertitle">
+<div class="title">Класс crew</div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p>Класс для работы с базой данных экипажей  
+ <a href="classcrew.html#details">Подробнее...</a></p>
+
+<p><code>#include &lt;<a class="el" href="crew_8h_source.html">crew.h</a>&gt;</code></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
+Закрытые данные</h2></td></tr>
+<tr class="memitem:a6b47507e64c98c3eef6e0a4cd51e58c3"><td class="memItemLeft" align="right" valign="top">string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcrew.html#a6b47507e64c98c3eef6e0a4cd51e58c3">doctor</a></td></tr>
+<tr class="memdesc:a6b47507e64c98c3eef6e0a4cd51e58c3"><td class="mdescLeft">&#160;</td><td class="mdescRight">фамилия врача  <a href="#a6b47507e64c98c3eef6e0a4cd51e58c3">Подробнее...</a><br /></td></tr>
+<tr class="separator:a6b47507e64c98c3eef6e0a4cd51e58c3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9d42810bf7ef68d70d1182b89e997830"><td class="memItemLeft" align="right" valign="top">string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcrew.html#a9d42810bf7ef68d70d1182b89e997830">paramedic</a></td></tr>
+<tr class="memdesc:a9d42810bf7ef68d70d1182b89e997830"><td class="mdescLeft">&#160;</td><td class="mdescRight">фамилия фельдшера  <a href="#a9d42810bf7ef68d70d1182b89e997830">Подробнее...</a><br /></td></tr>
+<tr class="separator:a9d42810bf7ef68d70d1182b89e997830"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a082b099f298f8439c68c31e4200b6bf8"><td class="memItemLeft" align="right" valign="top">string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcrew.html#a082b099f298f8439c68c31e4200b6bf8">driver</a></td></tr>
+<tr class="memdesc:a082b099f298f8439c68c31e4200b6bf8"><td class="mdescLeft">&#160;</td><td class="mdescRight">фамилия водителя  <a href="#a082b099f298f8439c68c31e4200b6bf8">Подробнее...</a><br /></td></tr>
+<tr class="separator:a082b099f298f8439c68c31e4200b6bf8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a44b51243cad90649ae0e82dd7c8f8fdb"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcrew.html#a44b51243cad90649ae0e82dd7c8f8fdb">duty_status</a></td></tr>
+<tr class="memdesc:a44b51243cad90649ae0e82dd7c8f8fdb"><td class="mdescLeft">&#160;</td><td class="mdescRight">статус дежурства: число часов на дежурстве  <a href="#a44b51243cad90649ae0e82dd7c8f8fdb">Подробнее...</a><br /></td></tr>
+<tr class="separator:a44b51243cad90649ae0e82dd7c8f8fdb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac70911d2d6c79724c90d5dd090c0b419"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcrew.html#ac70911d2d6c79724c90d5dd090c0b419">call_status</a></td></tr>
+<tr class="memdesc:ac70911d2d6c79724c90d5dd090c0b419"><td class="mdescLeft">&#160;</td><td class="mdescRight">статус вызова: когда освободится с текущего вызова  <a href="#ac70911d2d6c79724c90d5dd090c0b419">Подробнее...</a><br /></td></tr>
+<tr class="separator:ac70911d2d6c79724c90d5dd090c0b419"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7fd77bef9af216c5692871335d8c30b6"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcrew.html#a7fd77bef9af216c5692871335d8c30b6">duty_bool</a></td></tr>
+<tr class="memdesc:a7fd77bef9af216c5692871335d8c30b6"><td class="mdescLeft">&#160;</td><td class="mdescRight">статус дежураства(на дежурстве/не на дежурстве)  <a href="#a7fd77bef9af216c5692871335d8c30b6">Подробнее...</a><br /></td></tr>
+<tr class="separator:a7fd77bef9af216c5692871335d8c30b6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="friends"></a>
+Друзья</h2></td></tr>
+<tr class="memitem:a417504ce0dad62b1440c92a96a431f50"><td class="memItemLeft" align="right" valign="top">ostream &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcrew.html#a417504ce0dad62b1440c92a96a431f50">operator&lt;&lt;</a> (ostream &amp;os, const <a class="el" href="classcrew.html">crew</a> &amp;<a class="el" href="classcrew.html">crew</a>)</td></tr>
+<tr class="memdesc:a417504ce0dad62b1440c92a96a431f50"><td class="mdescLeft">&#160;</td><td class="mdescRight">Перегрузка операторов вывода  <a href="#a417504ce0dad62b1440c92a96a431f50">Подробнее...</a><br /></td></tr>
+<tr class="separator:a417504ce0dad62b1440c92a96a431f50"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad02000fe53c783095c1dcf847f70ffab"><td class="memItemLeft" align="right" valign="top">istream &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcrew.html#ad02000fe53c783095c1dcf847f70ffab">operator&gt;&gt;</a> (istream &amp;is, <a class="el" href="classcrew.html">crew</a> &amp;<a class="el" href="classcrew.html">crew</a>)</td></tr>
+<tr class="memdesc:ad02000fe53c783095c1dcf847f70ffab"><td class="mdescLeft">&#160;</td><td class="mdescRight">Перегрузка операторов ввода  <a href="#ad02000fe53c783095c1dcf847f70ffab">Подробнее...</a><br /></td></tr>
+<tr class="separator:ad02000fe53c783095c1dcf847f70ffab"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7990ec3113f7b39d33fbf686b4571eb5"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcrew.html#a7990ec3113f7b39d33fbf686b4571eb5">print_crew</a> (char *file_call, char *file_crew)</td></tr>
+<tr class="memdesc:a7990ec3113f7b39d33fbf686b4571eb5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Функция вывода базы данных экипажей  <a href="#a7990ec3113f7b39d33fbf686b4571eb5">Подробнее...</a><br /></td></tr>
+<tr class="separator:a7990ec3113f7b39d33fbf686b4571eb5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7b1ad2f215ae0bd676c9fd95afcbe900"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcrew.html#a7b1ad2f215ae0bd676c9fd95afcbe900">add_crew</a> (char *file_call, char *file_crew)</td></tr>
+<tr class="memdesc:a7b1ad2f215ae0bd676c9fd95afcbe900"><td class="mdescLeft">&#160;</td><td class="mdescRight">Функция добавления экипажей  <a href="#a7b1ad2f215ae0bd676c9fd95afcbe900">Подробнее...</a><br /></td></tr>
+<tr class="separator:a7b1ad2f215ae0bd676c9fd95afcbe900"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa52813950fc931049b98ebe5ae79387a"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcrew.html#aa52813950fc931049b98ebe5ae79387a">search</a> (char *file_call, char *file_crew)</td></tr>
+<tr class="memdesc:aa52813950fc931049b98ebe5ae79387a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Функция поиска экипажей  <a href="#aa52813950fc931049b98ebe5ae79387a">Подробнее...</a><br /></td></tr>
+<tr class="separator:aa52813950fc931049b98ebe5ae79387a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3184b2e3af665f49a9d04de8a7bced14"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcrew.html#a3184b2e3af665f49a9d04de8a7bced14">deletes_crew</a> (char *file_call, char *file_crew)</td></tr>
+<tr class="memdesc:a3184b2e3af665f49a9d04de8a7bced14"><td class="mdescLeft">&#160;</td><td class="mdescRight">Функция удаления экипажей  <a href="#a3184b2e3af665f49a9d04de8a7bced14">Подробнее...</a><br /></td></tr>
+<tr class="separator:a3184b2e3af665f49a9d04de8a7bced14"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adfd39ee03ecada01782dcd9d29975815"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcrew.html#adfd39ee03ecada01782dcd9d29975815">set_crew</a> (char *file_call, char *file_crew)</td></tr>
+<tr class="memdesc:adfd39ee03ecada01782dcd9d29975815"><td class="mdescLeft">&#160;</td><td class="mdescRight">Функция назначения дежурных экипажей  <a href="#adfd39ee03ecada01782dcd9d29975815">Подробнее...</a><br /></td></tr>
+<tr class="separator:adfd39ee03ecada01782dcd9d29975815"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af8ca315bcb517bb9c7f160068802ffe9"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcrew.html#af8ca315bcb517bb9c7f160068802ffe9">add_call</a> (char *file_call, char *file_crew)</td></tr>
+<tr class="memdesc:af8ca315bcb517bb9c7f160068802ffe9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Функция принятия вызовов  <a href="#af8ca315bcb517bb9c7f160068802ffe9">Подробнее...</a><br /></td></tr>
+<tr class="separator:af8ca315bcb517bb9c7f160068802ffe9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a51a71cd3ff66603f79adfab0c348acf0"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcrew.html#a51a71cd3ff66603f79adfab0c348acf0">set_time</a> (char *file_call, char *file_crew)</td></tr>
+<tr class="memdesc:a51a71cd3ff66603f79adfab0c348acf0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Функция времени  <a href="#a51a71cd3ff66603f79adfab0c348acf0">Подробнее...</a><br /></td></tr>
+<tr class="separator:a51a71cd3ff66603f79adfab0c348acf0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6c704d43de6a337247b9b08fb7b97e9f"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcrew.html#a6c704d43de6a337247b9b08fb7b97e9f">print_duty_crew</a> (char *file_call, char *file_crew)</td></tr>
+<tr class="memdesc:a6c704d43de6a337247b9b08fb7b97e9f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Функция вывода дежурных экипажей  <a href="#a6c704d43de6a337247b9b08fb7b97e9f">Подробнее...</a><br /></td></tr>
+<tr class="separator:a6c704d43de6a337247b9b08fb7b97e9f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Подробное описание</h2>
+<div class="textblock"><p>Класс для работы с базой данных экипажей </p>
+</div><h2 class="groupheader">Документация по друзьям класса и функциям, относящимся к классу</h2>
+<a id="af8ca315bcb517bb9c7f160068802ffe9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af8ca315bcb517bb9c7f160068802ffe9">&#9670;&nbsp;</a></span>add_call</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int add_call </td>
+          <td>(</td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>file_call</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>file_crew</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">friend</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Функция принятия вызовов </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">file_call</td><td>Текстовый документ с данными о вызовах </td></tr>
+    <tr><td class="paramname">file_crew</td><td>Текстовый документ с данными о экипажах </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd>0 если функция выполнена </dd></dl>
+
+</div>
+</div>
+<a id="a7b1ad2f215ae0bd676c9fd95afcbe900"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7b1ad2f215ae0bd676c9fd95afcbe900">&#9670;&nbsp;</a></span>add_crew</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int add_crew </td>
+          <td>(</td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>file_call</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>file_crew</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">friend</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Функция добавления экипажей </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">file_call</td><td>Текстовый документ с данными о вызовах </td></tr>
+    <tr><td class="paramname">file_crew</td><td>Текстовый документ с данными о экипажах </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd>0 если функция выполнена </dd></dl>
+
+</div>
+</div>
+<a id="a3184b2e3af665f49a9d04de8a7bced14"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3184b2e3af665f49a9d04de8a7bced14">&#9670;&nbsp;</a></span>deletes_crew</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int deletes_crew </td>
+          <td>(</td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>file_call</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>file_crew</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">friend</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Функция удаления экипажей </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">file_call</td><td>Текстовый документ с данными о вызовах </td></tr>
+    <tr><td class="paramname">file_crew</td><td>Текстовый документ с данными о экипажах </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd>0 если функция выполнена </dd></dl>
+
+</div>
+</div>
+<a id="a417504ce0dad62b1440c92a96a431f50"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a417504ce0dad62b1440c92a96a431f50">&#9670;&nbsp;</a></span>operator&lt;&lt;</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">ostream&amp; operator&lt;&lt; </td>
+          <td>(</td>
+          <td class="paramtype">ostream &amp;&#160;</td>
+          <td class="paramname"><em>os</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="classcrew.html">crew</a> &amp;&#160;</td>
+          <td class="paramname"><em>crew</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">friend</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Перегрузка операторов вывода </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">os</td><td>Поток данных </td></tr>
+    <tr><td class="paramname">crew</td><td>Данные вызовов </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="ad02000fe53c783095c1dcf847f70ffab"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad02000fe53c783095c1dcf847f70ffab">&#9670;&nbsp;</a></span>operator&gt;&gt;</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">istream&amp; operator&gt;&gt; </td>
+          <td>(</td>
+          <td class="paramtype">istream &amp;&#160;</td>
+          <td class="paramname"><em>is</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classcrew.html">crew</a> &amp;&#160;</td>
+          <td class="paramname"><em>crew</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">friend</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Перегрузка операторов ввода </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">is</td><td>Поток данных </td></tr>
+    <tr><td class="paramname">crew</td><td>Данные вызовов </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a7990ec3113f7b39d33fbf686b4571eb5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7990ec3113f7b39d33fbf686b4571eb5">&#9670;&nbsp;</a></span>print_crew</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int print_crew </td>
+          <td>(</td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>file_call</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>file_crew</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">friend</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Функция вывода базы данных экипажей </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">file_call</td><td>Текстовый документ с данными о вызовах </td></tr>
+    <tr><td class="paramname">file_crew</td><td>Текстовый документ с данными о экипажах </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd>0 если функция выполнена </dd></dl>
+
+</div>
+</div>
+<a id="a6c704d43de6a337247b9b08fb7b97e9f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6c704d43de6a337247b9b08fb7b97e9f">&#9670;&nbsp;</a></span>print_duty_crew</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int print_duty_crew </td>
+          <td>(</td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>file_call</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>file_crew</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">friend</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Функция вывода дежурных экипажей </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">file_call</td><td>Текстовый документ с данными о вызовах </td></tr>
+    <tr><td class="paramname">file_crew</td><td>Текстовый документ с данными о экипажах </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd>0 если функция выполнена </dd></dl>
+
+</div>
+</div>
+<a id="aa52813950fc931049b98ebe5ae79387a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa52813950fc931049b98ebe5ae79387a">&#9670;&nbsp;</a></span>search</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int search </td>
+          <td>(</td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>file_call</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>file_crew</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">friend</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Функция поиска экипажей </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">file_call</td><td>Текстовый документ с данными о вызовах </td></tr>
+    <tr><td class="paramname">file_crew</td><td>Текстовый документ с данными о экипажах </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd>0 если функция выполнена </dd></dl>
+
+</div>
+</div>
+<a id="adfd39ee03ecada01782dcd9d29975815"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adfd39ee03ecada01782dcd9d29975815">&#9670;&nbsp;</a></span>set_crew</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int set_crew </td>
+          <td>(</td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>file_call</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>file_crew</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">friend</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Функция назначения дежурных экипажей </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">file_call</td><td>Текстовый документ с данными о вызовах </td></tr>
+    <tr><td class="paramname">file_crew</td><td>Текстовый документ с данными о экипажах </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd>0 если функция выполнена </dd></dl>
+
+</div>
+</div>
+<a id="a51a71cd3ff66603f79adfab0c348acf0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a51a71cd3ff66603f79adfab0c348acf0">&#9670;&nbsp;</a></span>set_time</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int set_time </td>
+          <td>(</td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>file_call</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>file_crew</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">friend</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Функция времени </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">file_call</td><td>Текстовый документ с данными о вызовах </td></tr>
+    <tr><td class="paramname">file_crew</td><td>Текстовый документ с данными о экипажах </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd>0 если функция выполнена </dd></dl>
+
+</div>
+</div>
+<h2 class="groupheader">Данные класса</h2>
+<a id="ac70911d2d6c79724c90d5dd090c0b419"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac70911d2d6c79724c90d5dd090c0b419">&#9670;&nbsp;</a></span>call_status</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int crew::call_status</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>статус вызова: когда освободится с текущего вызова </p>
+
+</div>
+</div>
+<a id="a6b47507e64c98c3eef6e0a4cd51e58c3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6b47507e64c98c3eef6e0a4cd51e58c3">&#9670;&nbsp;</a></span>doctor</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">string crew::doctor</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>фамилия врача </p>
+
+</div>
+</div>
+<a id="a082b099f298f8439c68c31e4200b6bf8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a082b099f298f8439c68c31e4200b6bf8">&#9670;&nbsp;</a></span>driver</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">string crew::driver</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>фамилия водителя </p>
+
+</div>
+</div>
+<a id="a7fd77bef9af216c5692871335d8c30b6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7fd77bef9af216c5692871335d8c30b6">&#9670;&nbsp;</a></span>duty_bool</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool crew::duty_bool</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>статус дежураства(на дежурстве/не на дежурстве) </p>
+
+</div>
+</div>
+<a id="a44b51243cad90649ae0e82dd7c8f8fdb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a44b51243cad90649ae0e82dd7c8f8fdb">&#9670;&nbsp;</a></span>duty_status</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int crew::duty_status</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>статус дежурства: число часов на дежурстве </p>
+
+</div>
+</div>
+<a id="a9d42810bf7ef68d70d1182b89e997830"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9d42810bf7ef68d70d1182b89e997830">&#9670;&nbsp;</a></span>paramedic</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">string crew::paramedic</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>фамилия фельдшера </p>
+
+</div>
+</div>
+<hr/>Объявления и описания членов класса находятся в файле:<ul>
+<li><a class="el" href="crew_8h_source.html">crew.h</a></li>
+</ul>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Создано системой &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.14
+</small></address>
+</body>
+</html>
