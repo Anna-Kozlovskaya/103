@@ -24,7 +24,7 @@ int set_crew(char * file_call, char * file_crew) {
     	{
         	set >> set_crew[i];
         	cout<<"Экипаж №"<<i+1<<endl;
-        	cout << set_crew[i].doctor << " " << set_crew[i].paramedic << " " << set_crew[i].driver << endl;
+        	cout <<"Доктор : "<< set_crew[i].doctor << " Санитар : " << set_crew[i].paramedic << " Водитель : " << set_crew[i].driver << endl;
     	}
 	set.close();
     	cout<<"Выберите два экипажа на дежурство"<<endl;

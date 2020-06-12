@@ -31,7 +31,7 @@ int print_call(char * file_call, char * file_crew) {
 	for (i = 0; i < N; i++) 
     	{
         	print_call >> call_1[i];
-        	cout << call_1[i];
+        	cout <<"Адрес : "<< call_1[i].address <<" Время до адреса : "<< call_1[i].time_to <<" Необходимость госпитализации : "<<call_1[i].need_hosp<<" Время Обратно : "<< call_1[i].time_back<<" Фамилия врача : "<<call_1[i].assigned_crew<<" Статус вызова : "<<call_1[i].status <<endl;
 		cout<<endl;
     	}
 	print_call.close();

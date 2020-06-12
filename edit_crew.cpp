@@ -16,7 +16,12 @@ using namespace std;
         fstream add;
     	add.open(file_crew, ios::app);
         cout<<"Введите данные об экипаже :"<<endl;
-    	cin>> crew_add.doctor>>crew_add.paramedic>>crew_add.driver;
+	cout<<"Врач : "<<endl;
+    	cin>> crew_add.doctor;
+	cout<<"Санитар : "<<endl;
+	cin>>crew_add.paramedic;
+	cout<<"Водитель : "<<endl;
+	cin>>crew_add.driver;
         crew_add.duty_status=0;
         crew_add.call_status=0;
         crew_add.duty_bool=false;
@@ -52,8 +57,13 @@ using namespace std;
 		
 		/*Поиск экипажа по 3 фамилиям*/
 		
-		cout << "Введите экипаж который хотите удалить :"<< endl;
-		cin >> crew_2.doctor >> crew_2.paramedic >> crew_2.driver;
+		cout << "Введите фамилии членов экипажа, который хотите удалить :"<< endl;
+		cout<<"Врач : " <<endl;
+		cin >> crew_2.doctor;
+		cout<<"Санитар : "<<endl;
+		cin>> crew_2.paramedic;
+		cout<<"Водитель :"<<endl;
+		cin>> crew_2.driver;
 	
 		/*записываем в класс все остальные экипажи кроме экипажа который мы ходим удалить из базы*/
 

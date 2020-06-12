@@ -12,8 +12,15 @@ int add_call(char * file_call, char * file_crew){
     	fstream add;
 	add.open(file_call,ios::app);
 
-	cout<<"Заполните информацию о вызове: адрес, время пути до адреса, надобность госпитализации, время пути обратно"<<endl;
-	cin>>add_call.address>>add_call.time_to>>add_call.need_hosp>>add_call.time_back;
+	cout<<"Заполните информацию о вызове:"<<endl;
+	cout<<"Адрес : "<<endl;
+	cin>>add_call.address;
+	cout<<"Время пути до адреса :"<<endl;
+	cin>>add_call.time_to;
+	cout<<"Надобность госпитализации да/нет :"<<endl;
+	cin>>add_call.need_hosp;
+	cout<<"Время пути обратно : "<<endl;
+	cin>>add_call.time_back;
 	fstream crews;
 	crews.open(file_crew,ios::in);
 	if (!crews)
@@ -93,6 +100,6 @@ int add_call(char * file_call, char * file_crew){
    	 }
 	crews.close();
   	delete [] crew_1;
-	//delete [] add_call;
+	
 	return 0;
 }

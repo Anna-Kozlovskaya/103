@@ -27,7 +27,7 @@ int print_duty_crew(char * file_call, char * file_crew) {
         	fin >> crew_1[i];
 		if (crew_1[i].duty_bool == true){
 			cout << "Экипаж № "<< i+1 << endl;
-        		cout << crew_1[i].doctor << " " << crew_1[i].paramedic << " " << crew_1[i].driver << endl;
+        		cout <<"Доктор :" << crew_1[i].doctor << " Санитар : " << crew_1[i].paramedic << " Водитель : " << crew_1[i].driver <<" Часов на дежурстве : "<< crew_1[i].duty_status<<" Освободится с вызова через : "<<crew_1[i].call_status<< endl;
 		}
     	}
 	fin.close();
