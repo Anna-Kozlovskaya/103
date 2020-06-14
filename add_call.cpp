@@ -19,8 +19,13 @@ int add_call(char * file_call, char * file_crew){
 	cin>>add_call.time_to;
 	cout<<"Надобность госпитализации да/нет :"<<endl;
 	cin>>add_call.need_hosp;
+	if(add_call.need_hosp=="да")
+	{
 	cout<<"Время пути обратно : "<<endl;
 	cin>>add_call.time_back;
+	}
+	else
+	add_call.time_back=0;
 	fstream crews;
 	crews.open(file_crew,ios::in);
 	if (!crews)
