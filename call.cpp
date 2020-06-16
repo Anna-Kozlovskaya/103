@@ -3,7 +3,7 @@
 ostream& operator<< (ostream& os, const call& call) {
 
     os << call.address << " " << call.time_to << " "
-       << call.need_hosp << " " << call.time_back << " " << call.assigned_crew << " " << call.status;
+       << call.need_hosp << " " << call.time_back << " " << call.assigned_crew << " " << call.status << endl;
     return os;
 }
 istream& operator>> (istream& is, call& call) {
