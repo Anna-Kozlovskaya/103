@@ -97,7 +97,6 @@ int add_call(char * file_call, char * file_crew){
 	}
 		
   	add<<add_call;
-	add<<endl;
    	add.close();
 	crews.open(file_crew,ios::trunc | ios::out);
 	for (i = 0; i < N ; i++) {
