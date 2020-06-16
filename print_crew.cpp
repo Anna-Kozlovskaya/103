@@ -27,8 +27,9 @@ int print_crew(char * file_call, char * file_crew) {
 	for (int i = 0; i < line_count; i++) 
     	{
         	fin >> crew_1[i];
-		cout <<" Экиаж № "<<i+1<<endl;
-        	cout<<"Доктор : " << crew_1[i].doctor << " Санитар : " << crew_1[i].paramedic << " Водитель :  " << crew_1[i].driver << endl;
+		cout << " Экипаж № " << i+1 <<endl;
+        	cout << "Доктор   : " << crew_1[i].doctor << endl << "Санитар  : " << crew_1[i].paramedic << endl << "Водитель : " << crew_1[i].driver << endl;
+		cout << endl;
     	}
 	fin.close();
 	delete [] crew_1;
