@@ -31,7 +31,7 @@ int set_crew(char * file_call, char * file_crew) {
     	cin>>n1;
     	cin>>n2;   
    
-    	while((n1 == n2) || ((n1 < 1)||(n1 > N)) || ((n2 < 1)||(n2 > N))){
+    	while((n1 == n2) || ((n1 < 1)||(n1 > N+1)) || ((n2 < 1)||(n2 > N+1))){
         
         	cout<<"Экипажи выбранны некорректно, повторите попытку"<<endl;
        		cin>>n1;
