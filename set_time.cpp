@@ -74,14 +74,14 @@ int set_time(char * file_call, char * file_crew) {
     //записываем изменения
     fcall.open(file_call, ios::out);
     for ( i = 0; i < Ncall ; i++) {
-        fcall << calls[i] << endl;
+        fcall << calls[i];
     }
     fcall.close();
     delete [] calls;
 
     fcrew.open(file_crew, ios::out);
     for (i = 0; i < Ncrew ; i++) {
-        fcrew << crews[i] << endl;
+        fcrew << crews[i];
     }
     fcrew.close();
     delete [] crews;
