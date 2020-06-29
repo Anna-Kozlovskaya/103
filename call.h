@@ -2,6 +2,8 @@
 #define CALL_H
 #include <string>
 #include <iostream>
+#include "crew.h"
+
 
 using namespace std;
 /*!
@@ -29,11 +31,14 @@ private:
    */
     friend istream& operator>> (istream& is, call& call);
 
-    friend int print_call(char * file_call, char * file_crew);
-    friend int add_call(char * file_call, char * file_crew);
-    friend int set_time(char * file_call, char * file_crew);
-    friend int print_duty_crew(char * file_call, char * file_crew);
-    friend int set_crew(char * file_call, char * file_crew);
+    
+    
+    
+public:
+    int add_call(char * file_call, char * file_crew);
+    int print_call(char * file_call, char * file_crew);
+    int set_time(char * file_call, char * file_crew);
+
 };
 
 #endif // CALL_H

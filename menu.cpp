@@ -1,5 +1,8 @@
 #include <iostream>
 #include "all.h"
+//#include "crew.cpp"
+#include "crew.h"
+#include "call.h"
 #include <cstdlib>
 
 using namespace std;
@@ -8,6 +11,8 @@ int menu(char * file_call, char * file_crew) {
 
     //Думаю, что к меню дополнительные комментарии не нужны. Не в main, потому что его
     //засорять нехорошо.
+    crew cr;
+    call cl;
     for(;;){
         int choice,choice_1;
         system("clear");//Просто для более красивого меню(что-бы всё не было одно под другим)
@@ -28,7 +33,7 @@ int menu(char * file_call, char * file_crew) {
 
     	while(choice==1){ 
             system("clear");   
-            print_crew(file_call, file_crew);
+            cr.print_crew(file_call, file_crew);
 			cout << "0 - Вернуться в меню"<<endl;
 			cin >> choice ;
 				if(choice<0 || choice>0)
@@ -46,7 +51,7 @@ int menu(char * file_call, char * file_crew) {
             
 			    while(choice_1==1){ 
             		    system("clear");   
-            		    add_crew(file_call, file_crew);
+            		    cr.add_crew(file_call, file_crew);
 					    cout << "0-Вернуться в меню "<<endl;
 					    cin >>choice_1;
 					    if(choice_1<0 || choice_1>0)
@@ -54,7 +59,7 @@ int menu(char * file_call, char * file_crew) {
 			    }
 			    while(choice_1==2){
 					    system("clear");   
-            		    deletes_crew(file_call, file_crew);
+            		    cr.deletes_crew(file_call, file_crew);
 					    cout << "0-Вернуться в меню "<<endl;
 					    cin >>choice_1;
 					    if(choice_1<0 || choice_1>0)
@@ -66,7 +71,7 @@ int menu(char * file_call, char * file_crew) {
 			}
         while(choice==3){ 
             system("clear");   
-            set_crew(file_call, file_crew);
+           cr.set_crew(file_call, file_crew);
 			cout << "0 - Вернуться в меню"<<endl;
 			cin >> choice ;
 				if(choice<0 || choice>0)
@@ -74,7 +79,7 @@ int menu(char * file_call, char * file_crew) {
 		}
 	while(choice==4){ 
             system("clear");   
-            print_duty_crew(file_call, file_crew);
+            cr.print_duty_crew(file_call, file_crew);
 			cout << "0 - Вернуться в меню"<<endl;
 			cin >> choice ;
 				if(choice<0 || choice>0)
@@ -82,7 +87,7 @@ int menu(char * file_call, char * file_crew) {
 		}
         while(choice==5){ 
             system("clear");   
-            add_call(file_call,file_crew);
+            cl.add_call(file_call,file_crew);
 			cout << "0 - Вернуться в меню"<<endl;
 			cin >> choice ;
 				if(choice<0 || choice>0)
@@ -90,7 +95,7 @@ int menu(char * file_call, char * file_crew) {
 		}
         while(choice==6){ 
             system("clear");   
-            print_call(file_call,file_crew);
+            cl.print_call(file_call,file_crew);
 			cout << "0 - Вернуться в меню"<<endl;
 			cin >> choice ;
 				if(choice<0 || choice>0)
@@ -98,7 +103,7 @@ int menu(char * file_call, char * file_crew) {
 		}
          while(choice==7){ 
             system("clear");   
-            set_time(file_call, file_crew);
+            cl.set_time(file_call, file_crew);
 			cout << "0 - Вернуться в меню"<<endl;
 			cin >> choice ;
 				if(choice<0 || choice>0)
@@ -106,7 +111,7 @@ int menu(char * file_call, char * file_crew) {
 		}
         while(choice==8){ 
             system("clear");   
-            search(file_call, file_crew);
+            cr.search(file_call, file_crew);
 			cout << "0 - Вернуться в меню"<<endl;
 			cin >> choice ;
 				if(choice<0 || choice>0)
