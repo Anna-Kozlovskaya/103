@@ -1,0 +1,88 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.14"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Project: Исходный файл call.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Project
+   &#160;<span id="projectnumber">version 2.0</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Создано системой Doxygen 1.8.14 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'Поиск');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','Поиск');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="headertitle">
+<div class="title">call.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="call_8h.html">См. документацию.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#ifndef CALL_H</span></div><div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#define CALL_H</span></div><div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor">#include &lt;string&gt;</span></div><div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &lt;iostream&gt;</span></div><div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="crew_8h.html">crew.h</a>&quot;</span></div><div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;</div><div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;</div><div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="keyword">using namespace </span><a class="code" href="namespacestd.html">std</a>;</div><div class="line"><a name="l00012"></a><span class="lineno"><a class="line" href="classcall.html">   12</a></span>&#160;<span class="keyword">class </span><a class="code" href="classcall.html">call</a></div><div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;{</div><div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="keyword">private</span>:</div><div class="line"><a name="l00015"></a><span class="lineno"><a class="line" href="classcall.html#a8958abfd34b958f6349bd99f2cbbdb10">   15</a></span>&#160;    <span class="keywordtype">string</span> <a class="code" href="classcall.html#a8958abfd34b958f6349bd99f2cbbdb10">address</a>; </div><div class="line"><a name="l00016"></a><span class="lineno"><a class="line" href="classcall.html#ad112247d3c492b293395516dbb861611">   16</a></span>&#160;    <span class="keywordtype">int</span> <a class="code" href="classcall.html#ad112247d3c492b293395516dbb861611">time_to</a>; </div><div class="line"><a name="l00017"></a><span class="lineno"><a class="line" href="classcall.html#a89d1cc5b8e23d0460bb847672c8080cb">   17</a></span>&#160;    <span class="keywordtype">string</span> <a class="code" href="classcall.html#a89d1cc5b8e23d0460bb847672c8080cb">need_hosp</a>; </div><div class="line"><a name="l00018"></a><span class="lineno"><a class="line" href="classcall.html#a6c8fb7682c36af42eb045cefda66a7b1">   18</a></span>&#160;    <span class="keywordtype">int</span> <a class="code" href="classcall.html#a6c8fb7682c36af42eb045cefda66a7b1">time_back</a>; </div><div class="line"><a name="l00019"></a><span class="lineno"><a class="line" href="classcall.html#a7887e76d11fffc64c6a57bd23cdaad6f">   19</a></span>&#160;    <span class="keywordtype">string</span> <a class="code" href="classcall.html#a7887e76d11fffc64c6a57bd23cdaad6f">assigned_crew</a>; </div><div class="line"><a name="l00020"></a><span class="lineno"><a class="line" href="classcall.html#acbeb5e0647b0cb39b028db3535c203b8">   20</a></span>&#160;    <span class="keywordtype">string</span> <a class="code" href="classcall.html#acbeb5e0647b0cb39b028db3535c203b8">status</a>; </div><div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;</div><div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;    <span class="keyword">friend</span> ostream&amp; <a class="code" href="call_8cpp.html#a9a68eef14c68d8b56d5783c3249928b1">operator&lt;&lt; </a>(ostream&amp; os, <span class="keyword">const</span> <a class="code" href="classcall.html">call</a>&amp; <a class="code" href="classcall.html">call</a>);</div><div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;    <span class="keyword">friend</span> istream&amp; <a class="code" href="call_8cpp.html#a8f1a44060249d163b24e591f87b098e8">operator&gt;&gt; </a>(istream&amp; is, <a class="code" href="classcall.html">call</a>&amp; <a class="code" href="classcall.html">call</a>);</div><div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;</div><div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;    </div><div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;    </div><div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;    </div><div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;<span class="keyword">public</span>:</div><div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    <span class="keywordtype">int</span> add_call(<span class="keywordtype">char</span> * file_call, <span class="keywordtype">char</span> * file_crew);</div><div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;    <span class="keywordtype">int</span> print_call(<span class="keywordtype">char</span> * file_call, <span class="keywordtype">char</span> * file_crew);</div><div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;    <span class="keywordtype">int</span> set_time(<span class="keywordtype">char</span> * file_call, <span class="keywordtype">char</span> * file_crew);</div><div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;</div><div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;};</div><div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;</div><div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;<span class="preprocessor">#endif // CALL_H</span></div><div class="ttc" id="classcall_html_a8958abfd34b958f6349bd99f2cbbdb10"><div class="ttname"><a href="classcall.html#a8958abfd34b958f6349bd99f2cbbdb10">call::address</a></div><div class="ttdeci">string address</div><div class="ttdoc">адрес (улица.номер дома.номер квартиры) </div><div class="ttdef"><b>Definition:</b> call.h:15</div></div>
+<div class="ttc" id="classcall_html_a89d1cc5b8e23d0460bb847672c8080cb"><div class="ttname"><a href="classcall.html#a89d1cc5b8e23d0460bb847672c8080cb">call::need_hosp</a></div><div class="ttdeci">string need_hosp</div><div class="ttdoc">необходимость госпитализации (есть, нет) </div><div class="ttdef"><b>Definition:</b> call.h:17</div></div>
+<div class="ttc" id="classcall_html_ad112247d3c492b293395516dbb861611"><div class="ttname"><a href="classcall.html#ad112247d3c492b293395516dbb861611">call::time_to</a></div><div class="ttdeci">int time_to</div><div class="ttdoc">время до пациента (число часов) </div><div class="ttdef"><b>Definition:</b> call.h:16</div></div>
+<div class="ttc" id="crew_8h_html"><div class="ttname"><a href="crew_8h.html">crew.h</a></div></div>
+<div class="ttc" id="namespacestd_html"><div class="ttname"><a href="namespacestd.html">std</a></div></div>
+<div class="ttc" id="classcall_html"><div class="ttname"><a href="classcall.html">call</a></div><div class="ttdoc">Класс для работы с вызовами </div><div class="ttdef"><b>Definition:</b> call.h:12</div></div>
+<div class="ttc" id="call_8cpp_html_a8f1a44060249d163b24e591f87b098e8"><div class="ttname"><a href="call_8cpp.html#a8f1a44060249d163b24e591f87b098e8">operator&gt;&gt;</a></div><div class="ttdeci">istream &amp; operator&gt;&gt;(istream &amp;is, call &amp;call)</div><div class="ttdef"><b>Definition:</b> call.cpp:14</div></div>
+<div class="ttc" id="classcall_html_a6c8fb7682c36af42eb045cefda66a7b1"><div class="ttname"><a href="classcall.html#a6c8fb7682c36af42eb045cefda66a7b1">call::time_back</a></div><div class="ttdeci">int time_back</div><div class="ttdoc">время до больницы, если осуществляется госпиализация (число часов) </div><div class="ttdef"><b>Definition:</b> call.h:18</div></div>
+<div class="ttc" id="call_8cpp_html_a9a68eef14c68d8b56d5783c3249928b1"><div class="ttname"><a href="call_8cpp.html#a9a68eef14c68d8b56d5783c3249928b1">operator&lt;&lt;</a></div><div class="ttdeci">ostream &amp; operator&lt;&lt;(ostream &amp;os, const call &amp;call)</div><div class="ttdef"><b>Definition:</b> call.cpp:8</div></div>
+<div class="ttc" id="classcall_html_acbeb5e0647b0cb39b028db3535c203b8"><div class="ttname"><a href="classcall.html#acbeb5e0647b0cb39b028db3535c203b8">call::status</a></div><div class="ttdeci">string status</div><div class="ttdoc">статус вызова (выехали, выполнена госпитализация, завершен) </div><div class="ttdef"><b>Definition:</b> call.h:20</div></div>
+<div class="ttc" id="classcall_html_a7887e76d11fffc64c6a57bd23cdaad6f"><div class="ttname"><a href="classcall.html#a7887e76d11fffc64c6a57bd23cdaad6f">call::assigned_crew</a></div><div class="ttdeci">string assigned_crew</div><div class="ttdoc">назначенный экипаж (фамилия врача) </div><div class="ttdef"><b>Definition:</b> call.h:19</div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Создано системой &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.14
+</small></address>
+</body>
+</html>
