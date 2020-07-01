@@ -1,6 +1,6 @@
-SRC =  crew.o  call.o  menu.o   main.o 
+SRC =  crew.o  call.o  interface.o   main.o 
 
-all: app all.h crew.h call.h
+all: app interface.h crew.h call.h
 
 app: $(SRC)
 	g++ $(SRC) -o app
@@ -12,8 +12,8 @@ call.o: call.cpp
 	g++ -c -o call.o call.cpp
 
 
-menu.o: menu.cpp
-	g++ -c -o menu.o menu.cpp
+interface.o: interface.cpp
+	g++ -c -o interface.o interface.cpp
 
 main.o: main.cpp
 	g++ -c -o main.o main.cpp

@@ -1,5 +1,5 @@
 #include <iostream>
-#include "all.h"
+#include "interface.h"
 
 using namespace std;
 
@@ -10,7 +10,7 @@ int main(int argc, char* argv[])
             return 0;
         }
 
-        menu(argv[1], argv[2]);
+        interface::menu(argv[1], argv[2]);
         cout << "Завершено." << endl;
     return 0;
 }
