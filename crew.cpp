@@ -1,7 +1,7 @@
 #include<fstream>
 #include<iostream>
 #include<string>
-#include "all.h"
+#include "interface.h"
 #include "crew.h"
 using namespace std;
 
